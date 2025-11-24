@@ -1,4 +1,4 @@
-package com.orders.cli.entities;
+package com.orders.entities;
 
 public class Order {
     private String orderId;

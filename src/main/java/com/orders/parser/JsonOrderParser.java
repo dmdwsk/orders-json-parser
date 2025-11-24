@@ -1,7 +1,7 @@
-package com.orders.cli.parser;
+package com.orders.parser;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.orders.cli.entities.Order;
+import com.orders.entities.Order;
 
 import java.io.IOException;
 import java.nio.file.Files;

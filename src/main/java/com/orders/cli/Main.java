@@ -1,10 +1,10 @@
 package com.orders.cli;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.orders.cli.entities.Order;
-import com.orders.cli.parser.JsonOrderParser;
-import com.orders.cli.statistics.StatisticsCalculator;
-import com.orders.cli.xml.XmlWriter;
+import com.orders.entities.Order;
+import com.orders.parser.JsonOrderParser;
+import com.orders.statistics.StatisticsCalculator;
+import com.orders.xml.XmlWriter;
 
 import java.util.List;
 import java.util.Map;

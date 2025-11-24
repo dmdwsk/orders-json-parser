@@ -1,4 +1,4 @@
-package com.orders.cli.xml;
+package com.orders.xml;
 
 import java.io.IOException;
 import java.io.OutputStream;

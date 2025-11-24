@@ -1,7 +1,7 @@
-package com.orders.cli.parser;
+package com.orders.parser;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.orders.cli.entities.Order;
+import com.orders.entities.Order;
 
 import java.io.BufferedReader;
 import java.nio.file.Files;
@@ -23,8 +23,7 @@ public class FileReaderTask implements Callable<Order> {
        try(BufferedReader bufferedReader = Files.newBufferedReader(filePath)){
            return mapper.readValue(bufferedReader,Order.class);
        }catch (Exception e){
-           System.out.println("Failed to read: " + filePath);
-           return null;
+           throw new RuntimeException("Failed to read file: " + filePath, e);
        }
     }
 }
