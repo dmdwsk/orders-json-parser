@@ -1,19 +1,16 @@
-package com.orders.parser;
+package com.orders.cli.parser;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.orders.entities.Order;
+import com.orders.cli.entities.Order;
 
-import javax.imageio.IIOException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
-import java.util.stream.Collectors;
 
 public class JsonOrderParser {
     public final ObjectMapper mapper;

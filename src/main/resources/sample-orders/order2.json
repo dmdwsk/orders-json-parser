@@ -1,3 +1,7 @@
 {
-  "...": "..."
+  "orderId": "2",
+  "customerName": "Anna Smith",
+  "date": "2024-05-02",
+  "totalPrice": 82.10,
+  "products": "keyboard, mouse"
 }

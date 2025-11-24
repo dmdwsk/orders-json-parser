@@ -1,3 +1,7 @@
 {
-  "...": "..."
+  "orderId": "1",
+  "customerName": "John Doe",
+  "date": "2024-05-01",
+  "totalPrice": 55.30,
+  "products": "laptop, mouse"
 }

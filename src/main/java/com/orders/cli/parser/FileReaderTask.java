@@ -1,13 +1,11 @@
-package com.orders.parser;
+package com.orders.cli.parser;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.orders.entities.Order;
+import com.orders.cli.entities.Order;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Objects;
 import java.util.concurrent.Callable;
 
 public class FileReaderTask implements Callable<Order> {

@@ -1,6 +1,6 @@
-package com.orders.statistics;
+package com.orders.cli.statistics;
 
-import com.orders.entities.Order;
+import com.orders.cli.entities.Order;
 
 import java.util.HashMap;
 import java.util.List;
