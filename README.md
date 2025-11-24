@@ -36,6 +36,7 @@
    statistics_by_{attribute}.xml
 
 При статистиці за products:
+```xml
 <statistics>
 <item>
 <value>monitor</value>
@@ -50,7 +51,7 @@
 <count>1</count>
 </item>
 </statistics>
-
+```
 sample-orders/
 - order1.json
 - order2.json
@@ -66,6 +67,7 @@ sample-orders/
 Розпаралелювання дає значне прискорення.
 При збільшенні кількості потоків час обробки зменшується в десятки разів.
 5. Структура проекту
+```pgsql
    src/
    └── main/
    ├── java/com/orders
@@ -87,6 +89,9 @@ src/
 ├── JsonOrderParserTest.java
 ├── StatisticsCalculatorTest.java
 └── XmlWriterTest.java
+```
 6.Як запускати програму
+```bash
 mvn clean package
 java -jar target/orders-json-parser-1.0-SNAPSHOT.jar <folderPath> <attributeName> <threads>
+```
